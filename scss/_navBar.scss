@@ -37,25 +37,28 @@
 				right: 40px;
 			}
 
-			@media only screen and (max-width:767px){
-		        padding:{
-		        	left: 10px;
-		        	right: 10px;
-		        }
-		    }
-
 			.navLink {
 				font-size: 18px;
 				text-decoration: none;
 				color: #ececf4;
 				transition: all 400ms ease;
-				@media only screen and (max-width:767px){
-		            font-size: 16px;
-		        }
-		        &:hover {
-					color: #1badc0;
-				}
+
 			}
+
+			@media only screen and (max-width:767px){
+		        padding:{
+		        	left: 20px;
+		        	right: 20px;
+		        }
+		        justify-content: space-between;
+
+		        .navLink {
+		        	font-size: 16px;
+		        	&:hover {
+						color: #1badc0;
+					}
+		        }
+		    }
 		}
 	}
 }
