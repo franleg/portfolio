@@ -16,7 +16,7 @@
       padding: 0; }
       .navBar-container .navBar .logo-container .logo {
         text-decoration: none;
-        padding-left: 130px; }
+        padding-left: 120px; }
         @media only screen and (max-width: 767px) {
           .navBar-container .navBar .logo-container .logo {
             padding-left: 20px; } }
@@ -372,3 +372,6 @@
           color: #1badc0; }
   .footer-container .footer-text {
     font-size: 16px; }
+    @media only screen and (max-width: 767px) {
+      .footer-container .footer-text {
+        font-size: 14px; } }
