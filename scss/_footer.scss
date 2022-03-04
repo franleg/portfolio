@@ -1,0 +1,27 @@
+.footer-container {
+	background-color: #131e21;
+	color: #ececf4;
+	text-align: center;
+
+	.web-container {
+		padding: 20px 0 15px 0;
+
+		a {
+			text-decoration: none;
+
+			.footer-icon {
+				padding: 5px;
+				font-size: 24px;
+				color: #ececf4;
+				transition: all 400ms ease;
+				&:hover {
+					color: #1badc0;
+				}
+			}
+		}
+	}
+
+	.footer-text {
+		font-size: 16px;
+	}
+}
