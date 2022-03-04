@@ -15,17 +15,10 @@
       align-items: center;
       padding: 0; }
       .navBar-container .navBar .logo-container .logo {
-        font-size: 22px;
         text-decoration: none;
-        color: #ececf4;
-        padding-left: 120px;
-        font-family: LibreBaskerville;
-        font-weight: bold;
-        font-style: italic;
-        letter-spacing: 2px; }
+        padding-left: 130px; }
         @media only screen and (max-width: 767px) {
           .navBar-container .navBar .logo-container .logo {
-            font-size: 16px;
             padding-left: 20px; } }
     .navBar-container .navBar .navlinks-container {
       display: flex;
@@ -211,7 +204,8 @@
             text-align: center; }
           .profile-container .profile .profile-text .boton {
             width: 50%;
-            margin-top: 30px; } }
+            margin-top: 15px;
+            margin-bottom: 30px; } }
     @media only screen and (max-width: 767px) {
       .profile-container .profile {
         justify-content: center; } }

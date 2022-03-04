@@ -18,17 +18,10 @@
 			padding: 0;
 
 			.logo {
-				font-size: 22px;
 				text-decoration: none;
-				color: #ececf4;
-				padding-left: 120px;
-				font-family: LibreBaskerville;
-				font-weight: bold;
-				font-style: italic;
-				letter-spacing: 2px;
+				padding-left: 130px;
 
 				@media only screen and (max-width:767px){
-		            font-size: 16px;
 		            padding-left: 20px;
 		        }
 
