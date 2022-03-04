@@ -35,6 +35,8 @@
           color: #1badc0; }
       @media only screen and (max-width: 767px) {
         .navBar-container .navBar .navlinks-container {
+          position: relative;
+          width: 130%;
           padding-left: 0;
           padding-right: 20px;
           justify-content: space-between; }
