@@ -1,7 +1,7 @@
 .contact-container {
 	background-image: url("../assets/img/fondo-portfolio.png");
-	height: 115vh;
 	font-family: AbrilFatface;
+	padding-bottom: 70px;
 
 	.contact-title {
 		display: flex;
@@ -31,6 +31,7 @@
 	.contact {
 		display: flex;
 		height: 450px;
+		margin-top: 10px;
 
 		.info-container {
 			height: 100%;
@@ -83,7 +84,11 @@
 				}
 
 				@media only screen and (max-width:767px) {
-					margin: 10px 20px;	
+					margin: 10px 20px;
+
+					h4 {
+						font-size: 20px;
+					}	
 				}
 
 			}

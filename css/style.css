@@ -31,15 +31,15 @@
         text-decoration: none;
         color: #ececf4;
         transition: all 400ms ease; }
+        .navBar-container .navBar .navlinks-container .navLink:hover {
+          color: #1badc0; }
       @media only screen and (max-width: 767px) {
         .navBar-container .navBar .navlinks-container {
           padding-left: 0;
           padding-right: 20px;
           justify-content: space-between; }
           .navBar-container .navBar .navlinks-container .navLink {
-            font-size: 16px; }
-            .navBar-container .navBar .navlinks-container .navLink:hover {
-              color: #1badc0; } }
+            font-size: 16px; } }
 
 .home-container {
   background-image: url("../assets/img/fondo-codigo.png");
@@ -136,7 +136,6 @@
 
 .profile-container {
   background-image: url("../assets/img/fondo-perfil2.png");
-  height: 90vh;
   font-family: AbrilFatface; }
   .profile-container .profile-title {
     display: flex;
@@ -146,7 +145,8 @@
     padding: 30px; }
   .profile-container .profile {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 70px; }
     .profile-container .profile .profile-img {
       display: flex;
       justify-content: end;
@@ -201,7 +201,8 @@
           align-items: center;
           padding-top: 30px; }
           .profile-container .profile .profile-text p {
-            text-align: start; }
+            text-align: start;
+            width: 80%; }
           .profile-container .profile .profile-text .boton {
             width: 50%;
             margin-top: 30px; } }
@@ -210,13 +211,12 @@
         justify-content: center; } }
   @media only screen and (max-width: 767px) {
     .profile-container {
-      background-image: url("../assets/img/fondo-perfil3.png");
-      height: 120vh; } }
+      background-image: url("../assets/img/fondo-perfil3.png"); } }
 
 .portfolio-container {
   background-image: url("../assets/img/fondo-portfolio.png");
-  height: 130vh;
-  font-family: AbrilFatface; }
+  font-family: AbrilFatface;
+  padding-bottom: 70px; }
   .portfolio-container .portfolio-title {
     display: flex;
     justify-content: center;
@@ -237,14 +237,11 @@
       @media only screen and (max-width: 767px) {
         .portfolio-container .card-container .card {
           margin: 30px; } }
-  @media only screen and (max-width: 767px) {
-    .portfolio-container {
-      height: 200vh; } }
 
 .contact-container {
   background-image: url("../assets/img/fondo-portfolio.png");
-  height: 115vh;
-  font-family: AbrilFatface; }
+  font-family: AbrilFatface;
+  padding-bottom: 70px; }
   .contact-container .contact-title {
     display: flex;
     justify-content: center;
@@ -265,7 +262,8 @@
         margin-bottom: 10px; } }
   .contact-container .contact {
     display: flex;
-    height: 450px; }
+    height: 450px;
+    margin-top: 10px; }
     .contact-container .contact .info-container {
       height: 100%;
       display: flex;
@@ -304,7 +302,9 @@
           font-size: 22px; }
         @media only screen and (max-width: 767px) {
           .contact-container .contact .info-container .info {
-            margin: 10px 20px; } }
+            margin: 10px 20px; }
+            .contact-container .contact .info-container .info h4 {
+              font-size: 20px; } }
       @media only screen and (max-width: 767px) {
         .contact-container .contact .info-container {
           padding-top: 10px;

@@ -1,7 +1,7 @@
 .portfolio-container {
 	background-image: url("../assets/img/fondo-portfolio.png");
-	height: 130vh;
 	font-family: AbrilFatface;
+	padding-bottom: 70px;
 
 	.portfolio-title {
 		display: flex;
@@ -31,9 +31,6 @@
 				margin: 30px;
 			}
 		}
-	}
-	@media only screen and (max-width:767px) {
-		height: 200vh;
 	}
 }
 
