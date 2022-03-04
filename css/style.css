@@ -25,7 +25,7 @@
         letter-spacing: 2px; }
         @media only screen and (max-width: 767px) {
           .navBar-container .navBar .logo-container .logo {
-            font-size: 18px;
+            font-size: 16px;
             padding-left: 20px; } }
     .navBar-container .navBar .navlinks-container {
       display: flex;
@@ -178,7 +178,9 @@
         z-index: 1;
         overflow: hidden;
         display: inline-block;
-        font-size: 18px; }
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none; }
       .profile-container .profile .profile-text .boton:hover {
         color: #ececf4; }
       .profile-container .profile .profile-text .boton::after {
