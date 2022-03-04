@@ -33,7 +33,7 @@
         transition: all 400ms ease; }
       @media only screen and (max-width: 767px) {
         .navBar-container .navBar .navlinks-container {
-          padding-left: 20px;
+          padding-left: 0;
           padding-right: 20px;
           justify-content: space-between; }
           .navBar-container .navBar .navlinks-container .navLink {
@@ -201,7 +201,7 @@
           align-items: center;
           padding-top: 30px; }
           .profile-container .profile .profile-text p {
-            text-align: center; }
+            text-align: start; }
           .profile-container .profile .profile-text .boton {
             width: 50%;
             margin-top: 30px; } }
