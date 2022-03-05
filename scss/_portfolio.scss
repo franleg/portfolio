@@ -19,6 +19,48 @@
 			margin: 10px;
 			background-color: #152128;
 			color: #ececf4;
+			border-style: none;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, .4);
+
+			.card-img {
+				height: 100%;
+				background-size: cover;
+
+				.content {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: rgba(0, 0, 0, .4);
+					opacity: 0;
+					transition: .5s;
+
+					a {
+						border: 1px solid #ececf4;
+						border-radius: 50px;
+						padding: 10px 30px;
+						color: rgba(255, 255, 255, .8);
+						margin: 10px 0;
+					}
+				}
+
+				&:hover .content {
+					opacity: 1;
+				}
+			}
+
+			.card-img1 {
+				background-image: url("../assets/img/estore.png"); 
+			}
+
+			.card-img2 {
+				background-image: url("../assets/img/realnuts.png"); 
+			}
+
+			.card-img3 {
+				background-image: url("../assets/img/CBCounseling.png"); 
+			}						
 
 			a {
 				text-decoration: none;
