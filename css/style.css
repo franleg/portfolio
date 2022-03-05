@@ -155,6 +155,10 @@
       justify-content: end;
       position: relative;
       bottom: 10px; }
+      @media only screen and (max-width: 767px) {
+        .profile-container .profile .profile-img {
+          height: 90%;
+          width: 90%; } }
     .profile-container .profile .profile-text {
       display: flex;
       flex-direction: column; }
