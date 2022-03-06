@@ -284,13 +284,11 @@
         .portfolio-container .card-container .card a:hover {
           color: #1badc0; }
       @media only screen and (max-width: 767px) {
-        .portfolio-container .card-container .card {
-          margin: 10px; }
-          .portfolio-container .card-container .card .card-body {
-            padding-top: 30px;
-            padding-bottom: 30px; }
-            .portfolio-container .card-container .card .card-body .card-title {
-              padding-bottom: 10px; } }
+        .portfolio-container .card-container .card .card-body {
+          padding-top: 20px;
+          padding-bottom: 30px; }
+          .portfolio-container .card-container .card .card-body .card-title {
+            margin-bottom: 20px; } }
 
 .contact-container {
   background-image: url("../assets/img/fondo-portfolio.png");

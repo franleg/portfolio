@@ -70,12 +70,13 @@
 			}
 
 			@media only screen and (max-width:767px) {
-				margin: 10px;
 				.card-body {
-					padding-top: 30px;
-					padding-bottom: 30px;
+					padding: {
+						top: 20px;
+						bottom: 30px;
+					}
 					.card-title {
-						padding-bottom: 10px;
+						margin-bottom: 20px;
 					}
 				}
 			}
