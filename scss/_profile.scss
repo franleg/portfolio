@@ -1,5 +1,5 @@
 .profile-container {
-	background-image: url("../assets/img/fondo-perfil2.png");
+	background-image: url("../assets/img/fondo.perfil.png");
 	font-family: AbrilFatface;
 
 	.profile-title {
@@ -7,7 +7,7 @@
 		justify-content: center;
 		color: #ececf4;
 		font-size: 30px;
-		padding: 30px;
+		padding-top: 30px;
 	}
 
 	.profile {
@@ -98,4 +98,21 @@
 	@media only screen and (max-width:767px) {
 		background-image: url("../assets/img/fondo-perfil3.png");
 	}
+}
+
+.line-container {
+	display: flex;
+	justify-content: center;
+}
+
+.line {
+	display: inline-block;
+	width: 5rem;
+	height: .3rem;
+	background: #1badc0;
+	margin: 10px 0 30px 0;
+	@media only screen and (max-width:767px) {
+		width: 4rem;
+	}
+
 }

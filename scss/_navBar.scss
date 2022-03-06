@@ -39,10 +39,10 @@
 			}
 
 			.navLink {
-				font-size: 18px;
+				font-size: 20px;
 				text-decoration: none;
 				color: #ececf4;
-				transition: all 400ms ease;
+				transition: all 200ms ease;
 				&:hover {
 					color: #1badc0;
 				}
@@ -58,7 +58,7 @@
 		        justify-content: space-between;
 
 		        .navLink {
-		        	font-size: 16px;
+		        	font-size: 18px;
 		        }
 		    }
 		}
