@@ -31,18 +31,20 @@
         font-size: 20px;
         text-decoration: none;
         color: #ececf4;
+        letter-spacing: 1px;
         transition: all 200ms ease; }
         .navBar-container .navBar .navlinks-container .navLink:hover {
           color: #1badc0; }
       @media only screen and (max-width: 767px) {
         .navBar-container .navBar .navlinks-container {
           position: relative;
-          width: 130%;
+          width: 140%;
           padding-left: 0;
           padding-right: 20px;
           justify-content: space-between; }
           .navBar-container .navBar .navlinks-container .navLink {
-            font-size: 18px; } }
+            font-size: 18px;
+            letter-spacing: 0; } }
 
 .home-container {
   background-image: url("../assets/img/fondo-codigo.png");
