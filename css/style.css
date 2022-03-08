@@ -31,10 +31,22 @@
         font-size: 20px;
         text-decoration: none;
         color: #ececf4;
+        position: relative;
         letter-spacing: 1px;
         transition: all 200ms ease; }
         .navBar-container .navBar .navlinks-container .navLink:hover {
-          color: #1badc0; }
+          color: #ffffff; }
+      .navBar-container .navBar .navlinks-container .navLink:after {
+        content: "";
+        position: absolute;
+        background-color: #1badc0;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -8px;
+        transition: .3s; }
+      .navBar-container .navBar .navlinks-container .navLink:hover:after {
+        width: 100%; }
       @media only screen and (max-width: 767px) {
         .navBar-container .navBar .navlinks-container {
           position: relative;
