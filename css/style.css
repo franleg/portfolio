@@ -159,8 +159,9 @@ nav {
     nav .menu-bars {
       display: block;
       position: absolute;
-      top: 35px;
-      right: 25px; }
+      top: 30px;
+      right: 30px;
+      transform: scale(1.3); }
     nav .menu-links {
       flex-direction: column;
       justify-content: space-around;
