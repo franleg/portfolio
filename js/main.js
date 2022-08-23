@@ -12,15 +12,21 @@ $(".navLink").click(function(e) {
     switch (goTitle) {
         case "Sobre Mi":
             $("html, body").animate({
-                scrollTop: $("#sobreMi").offset().top -115},1500)
+                scrollTop: $("#sobreMi").offset().top -290},1500);
+                showMenu();
+                animateBars();
             break;
         case "Portfolio":
             $("html, body").animate({
-                scrollTop: $("#portfolio").offset().top -115},1500)
+                scrollTop: $("#portfolio").offset().top -290},1500);
+                showMenu();
+                animateBars();
             break;
         case "Contacto":
             $("html, body").animate({
-                scrollTop: $("#contacto").offset().top -115},1500)
+                scrollTop: $("#contacto").offset().top -290},1500);
+                showMenu();
+                animateBars();
             break;
     }
 });

@@ -1,4 +1,4 @@
-.navBar-container {
+/* .navBar-container {
 	z-index: 2;
 	padding: 0;
 	width: 100%;
@@ -33,7 +33,7 @@
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
-			padding:{
+			padding: {
 				left: 40px;
 				right: 40px;
 			}
@@ -68,7 +68,7 @@
 			@media only screen and (max-width:767px){
 				position: relative;
 				width: 140%;
-		        padding:{
+		        padding: {
 		        	left: 0;
 		        	right: 20px;
 		        }
@@ -81,5 +81,152 @@
 		    }
 		}
 	}
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 8vh;
+    background-color: #131e21;
+    height: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    .logo {
+        padding-left: 40px;
+    }
+    .menu-links {
+        display: flex;
+        padding-right: 40px;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+            padding: 0 40px;
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 600;
+                color: rgb(202, 201, 201);
+                transition: 0.3s;
+                position: relative;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            a:after {
+				content: "";
+                width: 60%;
+				position: absolute;
+				background-color: #ba0c2f;
+                background-color: #0164a0;
+				height: 3px;
+				width: 0;
+				left: 0;
+                border-radius: 1px;
+				bottom: -8px;
+				transition: .3s;
+			}
+
+			a:hover:after {
+				width: 100%;
+			}
+        }
+    }
+    .menu-bars {
+        display: none;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            margin-top: 6px;
+            border-radius: 2px;
+            transform-origin: 0px 100%;
+            transition: all 300ms;
+        }  
+        .line1-menu-bars.active {
+            transform: rotate(45deg) translate(-2px, 1px);
+        }  
+        .line2-menu-bars.active {
+            opacity: 0;
+            margin-left: -30px;
+        }
+        .line3-menu-bars.active {
+            transform: rotate(-45deg) translate(-4px, 2px);
+        }
+    }
 }
 
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+        transition: 0.4s ease;
+        .logo {
+            display: flex;
+            align-items: center;
+            padding-left: 25px;
+            padding-top: 15px;
+        }
+        .menu-bars {
+            display: block;
+            position: absolute;
+            top: 35px;
+            right: 25px;
+        }
+        hr {
+            color: #f3f3f3;
+            width: 90%;
+            border-width: 1px; 
+            border-color: rgb(235, 235, 235);
+            margin-top: 5px;
+            opacity: 0;
+        }
+        .menu-links {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 25vh;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: none;
+            opacity: 0;
+            li {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                transition: 0.3s;
+                &:hover {
+                    color: #f3f3f3;
+                    background-color: rgba(66, 66, 66, 0.253);
+                }
+                a{
+                    font-size: 18px;
+                }
+                a:hover:after {
+                    width: 0;
+                }
+            }
+        }        
+    }
+    @keyframes showMenu {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+    
+    nav.active {
+        height: 250px;
+    }
+    
+    .menu-links.active {
+        display: flex;
+        animation:showMenu 1s ease-in-out both;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}

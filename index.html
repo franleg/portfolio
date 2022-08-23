@@ -15,26 +15,23 @@
 	<link rel="stylesheet" href="css/style.css">
 <body>
 	<!-- NAVBAR -->
-	<div class="container-fluid sticky-top navBar-container">
-		<div class="row navBar">
-			<div class="col-lg-6 col-xs-6 logo-container">
-				<a href="index.html" class="logo" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
-					<img src="assets/img/logo.png" class="img-fluid">
-				</a>
-			</div>
-			<div class="col-lg-6 col-xs-6 navlinks-container">
-				<a href="#" class="navLink">
-					Sobre Mi
-				</a>
-				<a href="#" class="navLink">
-					Portfolio
-				</a>
-				<a href="#" class="navLink">
-					Contacto
-				</a>
-			</div>
-		</div>
-	</div>
+    <header class="sticky-top">
+        <nav>
+			<a href="index.html" class="logo" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+				<img src="assets/img/logo.png" class="img-fluid">
+			</a>
+            <ul class="menu-links">
+                <li><a href="#" id="link-inicio" class="navLink">Sobre Mi</a></li>
+                <li><a href="#" id="link-reservas" class="navLink">Portfolio</a></li>
+                <li><a href="#" id="link-escuelita" class="navLink">Contacto</a></li>
+            </ul>
+            <div class="menu-bars">
+                <span class="line1-menu-bars"></span>
+                <span class="line2-menu-bars"></span>
+                <span class="line3-menu-bars"></span>
+            </div>
+        </nav>
+    </header>	
 	<!-- HOME -->
 	<div class="container-fluid home-container">
 		<div class="row home">
@@ -193,7 +190,7 @@
 					Estoy disponible para trabajar en sus proyectos y hacer realidad sus ideas,
 				</p>
 				<p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
-					a solo un click de distancia:
+					a solo un click de distancia: 
 				</p>
 			</div>
 		</div>
@@ -263,6 +260,7 @@
 	<script>
 	AOS.init();
 	</script>
+	<script src="js/navBar.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
