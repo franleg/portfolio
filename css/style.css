@@ -82,6 +82,11 @@
 		}
 	}
 } */
+
+* {
+  overflow-x: hidden;
+}
+
 nav {
   display: flex;
   align-items: center;
