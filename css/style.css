@@ -309,6 +309,7 @@ nav {
       justify-content: end; }
       @media only screen and (max-width: 767px) {
         .profile-container .profile .profile-img {
+          justify-content: center;
           height: 90%;
           width: 90%; } }
     .profile-container .profile .profile-text {
